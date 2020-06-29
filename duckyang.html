@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>고양시로 Go!</title>
+  <link rel="stylesheet" type="text/css" href="style_borough.css">
+  <script type="text/javascript">
+
+  function nightDayHandler(self){
+    var body = document.getElementById("body");
+    var title=document.getElementById("title");
+    var addr=document.getElementsByClassName("address");
+
+    if (self.value === 'night'){
+      body.style.backgroundColor = "black";
+      body.style.color = "white";
+      title.style.color = "white";
+      for(i=0;i<addr.length;i++) addr[i].style.color="#d5f6f6";
+      self.value = 'day';
+    }
+    else{
+      body.style.backgroundColor = "white";
+      body.style.color = "black";
+      title.style.color = "black";
+      for(i=0;i<addr.length;i++) addr[i].style.color="Indigo";
+      self.value = 'night';
+    }
+  }
+
+  </script>
+</head>
+<body id="body">
+  <header>
+    <h1><a id="title" href="index.html">고양시로 Go!</a></h1>
+    <input type="button" value="night" onclick="nightDayHandler(this)"> <!--자바스크립트 이용하여 버튼 누르면 야간모드 되게-->
+  </header>
+  <nav>
+    <ul>
+      <li><a href="ilsan_east.html">일산동구</a></li>
+      <li><a href="ilsan_west.html">일산서구</a></li>
+      <li><a href="duckyang.html" id="now">덕양구</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <article>
+    <section>
+      <h2>행주산성</h2>
+      <img src="hengjumt.jpg" width="500px" height="300px">
+      <p>'죽기전에 꼭 가봐야할 국내여행 1001선'에 오른 <strong>행주산성</strong>은 많은 분들에게 익숙한 곳일겁니다. 한강의 호젓한 아름다움을 바라보는 경관이 멋진 행주산성은 한산도대첩, 진주대첩과 함께 임진왜란의 3대 대첩으로 불리는 행주대첩은 역사의 현장입니다. 권율 장군을 중심으로 3만 명의 왜군을 맞아 9일간의 격렬한 전투를 승리로 이끈 힘은 군인은 물론 긴 치마를 짧게 잘라 돌을 나르며 항전한 부녀자들을 비롯한 백성들의 용기와 호국의 정신이 행주산성에 깃들어 있습니다.</p>
+      <p>서해바다로 흘러가는 한강의 장관을 감상하기에 좋습니다. 기념비에서 바라보이는 모습은 1㎞의 여유로운 산책로와 함께 행주산성의 명물로 손꼽힙니다. 행주산성에서 행주대교를 지 일산호수공원까지 가는 행주나루길 순환코스가 있어 느긋하게 고양시를 둘러보고 싶으신 분들께는 행주나루길을 걷는 것을 추천드립니다. .</p>
+      <img src="dark.jpg" width="500px" height="300px">
+      <p>행주산성은 매년 7, 8월에 야간개장을 하는데 정상에서 바라보는 야경은 사진작가들의 출사 장소로 인기가 높습니다. 2020년 야간관광 100선에 선정된 행주산성은 저녁노을이 아름다운 한강하구의 경치 감상과 더불어 주변 행주마을에서 저녁식사, 카페거리에서 차 한 모금 등 힐링 장소로 각광받고 있습니다<br><br>
+      매년 1월 1일에는 행주산성에서 해돋이를 볼 수 있으니 서서울 지역 주민들과 경기 북부 지역 주민들에게 해돋이 장소로 추천드립니다.</p>
+      *주소 : <a href = "https://map.naver.com/v5/search/%ED%96%89%EC%A3%BC%EC%82%B0%EC%84%B1/place/13219297?c=14117288.5187887,4522927.0603762,15,0,0,0,dh" title="행주산성-네이버지도" target="_blank"><span class="address">경기 고양시 덕양구 행주내동 산26-1</span></a>
+
+      <h3>원조 국수집</h3>
+      <img src="janchi.jpg" width="350px" height="250px">
+      <img src="bibim.jpg" width="350px" height="250px">
+      <p><원조 국수집>은 행주산성 입구에 위치하고 있어 근처의 국수집 중 가장 오래된 국수집 입니다. 한강을 따라 라이딩하는 자전거 라이더 들에게 특히 인기인 국수전문점입니다. 착한가격에 양도 엄청 푸짐하며 맛있습니다. 인기가 많은 만큼 사람들이 많이 찾아 많이 기다릴 수 있으니 여유있게 방문하시는 것을 추천드립니다.<br><br>
+      잔치국수와 비빔국수가 주 메뉴로 잔치국수는 꼭 드시는 것을 강추합니다!  </p>
+      *주소 : <a href = "https://map.naver.com/v5/search/%EC%9B%90%EC%A1%B0%EA%B5%AD%EC%88%98%EC%A7%91/place/20601267?c=14117453.4542373,4523311.8663198,14,0,0,0,dh" title="원조 국수집-네이버지도" target="_blank"><span class="address">경기 고양시 덕양구 행주로17번길 10</span></a>
+
+      <h3>아이맛이야 장작철판구이</h3>
+      <img src="imat.jpg" width="300px" height="300px">
+      <img src="imat2.jpg" width="300px" height="300px">
+      <p>'전지적 참견시점'의 애청자시라면 이 곳은 꼭 보셨을 겁니다. 이 곳은 이영자씨가 맛집이라고 추천한 곳이기 때문입니다. 뿐만 아니라 생생정보통, vj 특공대등 많은 방송에 나와 매우 유명합니다. 초대형 철판에 고기들을 구어주어 눈요기로도 좋으며 맛도 뛰어납니다. 고기들 뿐만 아니라 김치, 콩나물, 마늘도 같이 구어주어 엄청나게 맛있는 식사를 하실수 있습니다! 고기를 주문하시면 국수도 같이 나오니 꼭 한번 찾아가 보세요!</p>
+      *주소 : <a href = "" title="아이맛이야 장작철판구이-네이버지도" target="_blank"><span class="address">경기 고양시 덕양구 행주로17번길 5-5</span></a>
+    </section>
+
+    <section>
+      <h2>스타필드 고양</h2>
+      <img src="star.jpg" width="500px" height="300px">
+      <p><strong>스타필드 고양</strong>은 쇼핑, 레저, 힐링이 한 곳에서 이뤄지는 쇼핑 테마파크로 아침부터 저녁까지 가족과 친구들이 함께 쇼핑하고, 맛있는 음식과 레저를 즐기고, 편히 쉴 수도 있는 곳입니다. 메가박스가 드러서 있으며 다양한 옷가게들과 카카오 프렌즈 샵과 같이 다양한 문구류 매장이 있어서 쇼핑하기에 매우 적합합니다. 지하에는 '이마트 트레이더스'가 있어 식품들을 값싸게 살 수 있으며 맨 위층에는 '아쿠아필드'가 있습니다. '아쿠아필드'는 고급 찜질방으로 많은 분들이 여기에서 힐링을 즐깁니다. 이외에도 토이킹덤과 같이 어린이들을 위한 공간이 있어 가족들이 즐기기 매우 좋습니다.<br><br>
+      지하철 3호선 삼송역에서 내려서 10분동안 걸어오시거나 역에 있는 마을버스를 타면 오실 수 있습니다.</p>
+        *주소 : <a href = "https://map.naver.com/v5/search/%EC%8A%A4%ED%83%80%ED%95%84%EB%93%9C%EA%B3%A0%EC%96%91/place/1122121790?c=14125755.6516772,4529651.1055266,17,0,0,0,dh" title="스타필드 고양-네이버지도" target="_blank"><span class="address">경기 고양시 덕양구 고양대로 1955</span></a>
+
+      <h3>소이연남</h3>
+        <img src="soi.jpg" width="350px" height="250px">
+        <img src="soi2.jpg" width="250px" height="250px">
+        <p><strong>소이연남</strong>은 스타필드 내에 위치한 맛집입니다. 연남동에 위치한 태국 요리 전문점 ‘소이연남’의 분점입니다. 대표 메뉴는 소뼈와 무로 진하게 우려낸 고기 국물에 계피, 샐러리, 감초, 양파, 고수, 뿌리, 팔각, 후추, 마늘, 등의 각종 향신료로 풍미를 더한 ‘소고기 국수’입니다. 진한 육수에 쫄깃한 탄성이 살아있는 중면과 아삭한 숙주, 부드러운 아롱사태의 조화가 일품입니다. 태국식 스프링롤 ‘소이 뽀삐아’도 인기 메뉴 중 하나로 새우, 버섯, 죽순 등 다양한 재료를 춘권피로 말아서 튀겨내 느끼함은 줄이고 바삭함을 더한 것이 특징입니다. 건포도로 만든 새콤달콤한 특제소스를 곁들이면 더욱 맛있게 즐길 수 있습니다. 갓 김장한 김치 맛의 태국식 파파야 샐러드 ‘쏨땀’도 별미입니다.</p>
+    </section>
+
+  </article>
+  <aside>
+    &lt;&lt;More Information about Goyang city&gt;&gt;
+    <div class="site"><a href="http://www.goyang.go.kr/www/index.do" target="_blank" class="myButton">고양시청</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.goyang.go.kr/visitgoyang/index.asp" target="_blank" class="myButton">고양시 문화관광</a>
+</div>
+</aside>
+  <hr>
+  <footer>
+    <small>이 사이트는 학교 과제로 만든 사이트입니다. "나눔바른펜"폰트에 최적화 되어 만들어졌습니다.</small>
+    <div class="SNS">
+      <a href="https://www.facebook.com/profile.php?id=100005194088107" target="_blank"><img src="facebook.png" width="26" height="26"></a>
+      <a href="https://www.instagram.com/hse06028/" target="_blank"><img src="insta.png" width="26" height="26"></a>
+    </div>
+  </footer>
+</body>
+</html>

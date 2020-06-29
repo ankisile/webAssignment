@@ -1,0 +1,70 @@
+a{color:black; text-decoration:none;}
+body{
+  margin-left:200px;
+  margin-right:200px;
+}
+header{
+ vertical-align:middle;
+ margin-top:30px;
+ font-family:"Arial";
+}
+header h1, aside{
+  text-align:center;
+}
+nav{
+  text-align:center;
+  border-bottom:1px solid gray;
+  border-top:1px solid gray;
+  font-size:13pt;
+  font-family:"나눔바른펜","맑은 고딕","돋움체";
+}
+nav a{
+  color:#737373;
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  padding:50px;
+}
+nav a:hover, #now{
+  color:#ee1147;
+  font-weight:bold;
+}
+article{
+  text-align: center;
+  margin:100px;
+  font-family:"나눔바른펜","맑은 고딕","돋움체";
+}
+aside{
+  font-family:"Arial";
+}
+.myButton {
+  background-color:#fc8d83;
+  border:2px solid #d83526;
+  display:inline;
+  color:#ffffff;
+  font-size:13px;
+  font-weight:bold;
+  padding:10px 16px;
+  border-radius: 5px;
+}
+.myButton:hover {
+  background-color:#e4685d;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+.site{
+  margin:30px;
+}
+.SNS{
+  float:right;
+}
+.address{
+  color:Indigo;
+}
+section{
+  margin-top:80px;
+  margin-bottom:30px;
+}

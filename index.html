@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>고양시로 Go!</title>
+  <link rel="stylesheet" type="text/css" href="style_index.css">
+
+  <script type="text/javascript">
+    var imgArray = new Array();
+
+    imgArray[0] = "goyang1.jpg";
+    imgArray[1] = "goyang2.jpg";
+    imgArray[2] = "goyang3.jpg";
+    imgArray[3] = "goyang4.jpg";
+
+    var i=0;
+    function showImage(){
+      var index = i%4;
+      var objImg = document.getElementById("changeImg");
+      objImg.src=imgArray[index];
+      i=i+1;
+      setTimeout(showImage, 3500);
+    }
+
+    function nightDayHandler(self){
+      var body = document.getElementById("body");
+      var title=document.getElementById("title");
+      if (self.value === 'night'){
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        title.style.color = "white";
+        self.value = 'day';
+      }
+      else{
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+        title.style.color = "black";
+        self.value = 'night';
+
+      }
+    }
+  </script>
+</head>
+<body id="body" onload="showImage()">
+  <header>
+    <h1><a id ="title" href="index.html">고양시로 Go!</a></h1>
+    <input type="button" value="night" onclick="nightDayHandler(this)"> <!--자바스크립트 이용하여 버튼 누르면 야간모드 되게-->
+  </header>
+  <nav>
+    <ul>
+      <li><a href="ilsan_east.html">일산동구</a></li>
+      <li><a href="ilsan_west.html">일산서구</a></li>
+      <li><a href="duckyang.html">덕양구</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>고양시에 오신것을 환영합니다!</h1>
+    <div>
+      <img id="changeImg" width = "500px" height="400px">
+    </div>
+    <p>이 사이트는 고양시가 문화관광도시임을 널리 알리고 고양시민들과 고양시에 방문하는 사람들에게 정보를 가져다주고자 만든 사이트 입니다</p>
+  </article>
+  <aside>
+    &lt;&lt;More Information about Goyang city&gt;&gt;
+    <div class="site">
+      <a href="http://www.goyang.go.kr/www/index.do" target="_blank" class="myButton">고양시청</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.goyang.go.kr/visitgoyang/index.asp" target="_blank" class="myButton">고양시 문화관광</a>
+    </div>
+</aside>
+  <hr>
+  <footer>
+    <small> 이 사이트는 학교 과제로 만든 사이트입니다. "나눔바른펜"폰트에 최적화 되어 만들어졌습니다.</small>
+    <div class="SNS">
+      <a href="https://www.facebook.com/profile.php?id=100005194088107" target="_blank"><img src="facebook.png" width="26" height="26"></a>
+      <a href="https://www.instagram.com/hse06028/" target="_blank"><img src="insta.png" width="26" height="26"></a>
+    </div>
+  </footer>
+</body>
+</html>

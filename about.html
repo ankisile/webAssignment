@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>고양시로 Go!</title>
+  <link rel="stylesheet" type="text/css" href="style_about.css">
+  <script type="text/javascript">
+
+  function nightDayHandler(self){
+    var body = document.getElementById("body");
+    var title = document.getElementById("title");
+    var who = document.getElementById("who");
+
+    if (self.value === 'night'){
+      body.style.backgroundColor = "black";
+      body.style.color = "white";
+      title.style.color = "white";
+      who.style.border = "1px solid white";
+      who.style.backgroundColor = "white";
+      who.style.color = "black";
+      self.value = 'day';
+    }
+    else{
+      body.style.backgroundColor = "white";
+      body.style.color = "black";
+      title.style.color = "black";
+      who.style.border = "1px solid black";
+      who.style.backgroundColor = "black";
+      who.style.color = "white";
+      self.value = 'night';
+    }
+  }
+
+  </script>
+</head>
+<body id="body">
+  <header>
+    <h1><a id="title" href="index.html">고양시로 Go!</a></h1>
+    <input type="button" value="night" onclick="nightDayHandler(this)"> <!--자바스크립트 이용하여 버튼 누르면 야간모드 되게-->
+  </header>
+  <nav>
+    <ul>
+      <li><a href="ilsan_east.html">일산동구</a></li>
+      <li><a href="ilsan_west.html">일산서구</a></li>
+      <li><a href="duckyang.html">덕양구</a></li>
+      <li><a href="about.html" id="now">About</a></li>
+    </ul>
+  </nav>
+  <article>
+      <span id="who">WHO AM I</span>
+      <img src="me.jpg" id="me" width=30%>
+
+      <div class="intro">
+
+      * Name : 송민영<br><br>
+      * University : 숙명여자대학교<br><br>
+      * Major : 소프트웨어학부 컴퓨터과학전공<br><br>
+      * School ID : 1916737<br><br><br>
+
+      안녕하세요!! 저는 송민영입니다.<br>
+      제가 살고 있는 고양시에 대해 사람들이 많이 모르는 것 같아 많이 아쉬웠습니다.<br>
+      이번기회를 통해 많은 분들께 고양시를 소개해 드릴수 있었고 많은 분들이 이를 보고 고양시를 찾아 와주셨으면 좋겠습니다!!<br><br>
+
+      고양시나 사이트와 관련해 저에게 연락하고 싶으신 분은 아래의 인스타그램이나 페이스북 아이콘을 선택하시면 연락하실수 있습니다!<br>
+      혹은 hse06028@naver.com으로 연락하신다면 빠른 시간내에 답장을 받으실 수 있습니다!
+      </div>
+  </article>
+  <hr>
+  <footer>
+    <small>이 사이트는 학교 과제로 만든 사이트입니다. "나눔바른펜"폰트에 최적화 되어 만들어졌습니다.</small>
+    <div class="SNS">
+      <a href="https://www.facebook.com/profile.php?id=100005194088107" target="_blank"><img src="facebook.png" width="26" height="26"></a>
+      <a href="https://www.instagram.com/hse06028/" target="_blank"><img src="insta.png" width="26" height="26"></a>
+    </div>
+  </footer>
+</body>
+</html>

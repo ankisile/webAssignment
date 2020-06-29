@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>고양시로 Go!</title>
+  <link rel="stylesheet" type="text/css" href="style_borough.css">
+  <script type="text/javascript">
+
+  function nightDayHandler(self){
+    var body = document.getElementById("body");
+    var title=document.getElementById("title");
+    var addr=document.getElementsByClassName("address");
+
+    if (self.value === 'night'){
+      body.style.backgroundColor = "black";
+      body.style.color = "white";
+      title.style.color = "white";
+      for(i=0;i<addr.length;i++) addr[i].style.color="#d5f6f6";
+      self.value = 'day';
+    }
+    else{
+      body.style.backgroundColor = "white";
+      body.style.color = "black";
+      title.style.color = "black";
+      for(i=0;i<addr.length;i++) addr[i].style.color="Indigo";
+      self.value = 'night';
+    }
+  }
+
+  </script>
+</head>
+<body id="body">
+  <header>
+    <h1><a id="title" href="index.html">고양시로 Go!</a></h1>
+    <input type="button" value="night" onclick="nightDayHandler(this)"> <!--자바스크립트 이용하여 버튼 누르면 야간모드 되게-->
+  </header>
+  <nav>
+    <ul>
+      <li><a href="ilsan_east.html">일산동구</a></li>
+      <li><a href="ilsan_west.html" id="now">일산서구</a></li>
+      <li><a href="duckyang.html">덕양구</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <article>
+    <section>
+      <h2>원마운트</h2>
+      <img src="onemount.jpg" width="500px" height="300px">
+      <p><strong>원마운트</strong>에는 워터파크와 스노우파크가 있으며 쇼핑몰도 있습니다</p>
+      <img src="water.jpg" width="400px" height="300px">
+      <img src="snow.jpg" width="400px" height="300px">
+      <p>워터파크는 실내외를 넘나드는 짜릿한 워터 슬라이드와 파도 풀이 있으며 가족, 연인, 친구와 함께 즐기는 다양한 놀이가 가득한 곳입니다. 사계절 즐길 수 있으며 도심 최대 규모의 워터파크 입니다. 케러비안 베이와 같은 곳보다는 작지만 슬라이드가 3대가 있으며 복층으로 이루어져 있어 즐기기에 매우 좋습니다. 스노우파크는 여름에도 눈을 즐길 수가 있으며 눈과 관련된 세계 최초의 테마파크 입니다. 회전목마, 사계절 눈이 있는 스노우힐, 아이스링크, 눈썰매장이 있으며, 개썰매가 인기가 많으며 겨울시즌에는 아이스쇼를 관람할 수 있습니다.<br>
+        웨스턴돔과 같이 쇼핑몰들이 스트릿 형태로 이루어져 있으며 주로 SPA 매장과 프렌차이즈 매장이 있습니다.
+        <br><br>
+        지하철 3호선 주엽역에서 걸어서 10분거리에 위치해 있습니다.
+</p>
+        *주소 : <a href = "https://map.naver.com/v5/search/%EC%9B%90%EB%A7%88%EC%9A%B4%ED%8A%B8/place/13448741?c=14110017.4735648,4532149.1664294,16,0,0,0,dh" title="원마운트-네이버지도" target="_blank"><span class="address">경기 고양시 일산서구 한류월드로 300</span></a>
+        <h3>바르미 스시뷔페</h3>
+        <img src="sushi.jpg" width="350px" height="250px">
+        <p>원마운트 안에 있는 일산 원마운트 맛집으로 유명한 스시 뷔페입니다. 가게 내부는 전체가 나무로 이루어져 있어 자연친화적이며 깔끔한 분위기입니다. 넓은 좌석과 룸이 구비되어 있어 단체로 오기에도 좋은 곳입니다. 싱싱한 생선회와 초밥, 다코야키, 연어샐러드, 훈제오리구이, 샐러드 등 매우 다양한 종류의 요리들이 준비되어 있습니다. 합리적인 가격으로 우수한 품질의 스시 및 샐러드 등 다양하게 뷔페를 이용할 수 있습니다.</p>
+        *주소 : <a href = "https://map.naver.com/v5/search/%EB%B0%94%EB%A5%B4%EB%AF%B8%EC%8A%A4%EC%8B%9C%EB%B7%94%ED%8E%98/place/38710438?c=14110017.4735648,4532149.1664294,16,0,0,0,dh" title="바르미 스시뷔페-네이버지도" target="_blank"><span class="address">경기 고양시 일산서구 한류월드로 300 원마운트</span></a>
+    </section>
+    <section>
+      <h2>킨텍스</h2>
+      <img src="kintex.jpg" width="500px" height="300px">
+      <p><strong>킨텍스</strong>는 국내 최대, 아시아 4번째 전시면적을 기반으로 국제 전시, 컨벤션을 유치, 운영함으로써 대한민국 전시 사업을 대표하고 있습니다. 국제수준 전시면적 확보로 세계적 전시회로 발돋움할 수 있는 전환점을 마련하였다. 국내 최초 10만m²전시회인 ‘2011 한국산업대전’의 성공적 개최를 시작으로 국내 주요 전시회들의 대형화에 앞장서고 있습니다. 또한, e-sports 대회, 미스터트롯 등의 콘서트가 킨텍스에서 개최되고 있습니다. 주요 시설은 크게 제 1전시장, 제 2전시장이 있습니다. 제1전시장은 지하1층부터 지상2층으로 이루어져 있으며, 제 2전시장은 지하1층에서 지상 15층까지 이루어져 있습니다.</p>
+        *주소 : <a href = "https://map.naver.com/v5/search/%ED%82%A8%ED%85%8D%EC%8A%A4/place/11853778?c=14109077.2724853,4532788.3029557,16,0,0,0,dh" title="킨텍스-네이버지도" target="_blank"><span class="address">경기 고양시 일산서구 킨텍스로 217-60</span></a>
+    </section>
+
+  </article>
+  <aside>
+    &lt;&lt;More Information about Goyang city&gt;&gt;
+    <div class="site"><a href="http://www.goyang.go.kr/www/index.do" target="_blank" class="myButton">고양시청</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.goyang.go.kr/visitgoyang/index.asp" target="_blank" class="myButton">고양시 문화관광</a>
+</div>
+</aside>
+  <hr>
+  <footer>
+    <small>이 사이트는 학교 과제로 만든 사이트입니다. "나눔바른펜"폰트에 최적화 되어 만들어졌습니다.</small>
+    <div class="SNS">
+      <a href="https://www.facebook.com/profile.php?id=100005194088107" target="_blank"><img src="facebook.png" width="26" height="26"></a>
+      <a href="https://www.instagram.com/hse06028/" target="_blank"><img src="insta.png" width="26" height="26"></a>
+    </div>
+  </footer>
+</body>
+</html>
